@@ -23,17 +23,15 @@ $preference->payment_methods = array(
 
 $NombreProducto = $_POST['title'];
 $Precio = $_POST['price'];
+$url = $_POST['img'];
 
 $item = new MercadoPago\Item();
 $item->id = "1";
 $item->title = $NombreProducto;
-$item->description = "“Dispositivo móvil de Tienda e-commerce”";
+$item->description = "Dispositivo móvil de Tienda e-commerce";
+$item->picture_url = "";
 $item->quantity = 1;
-$item->currency_id = "MXN";
 $item->unit_price = $Precio;
-
-$preference->items = array($item);
-$preference->save();
 
 //informacion del cliente
 $payer = new MercadoPago\Payer();
@@ -50,6 +48,11 @@ $payer->address = array(
   "street_number" => 1602,
   "zip_code" => "03940"
 );
+
+$preference->items = array($item);
+$preference->payer = $payer;
+$preference->external_reference = "fernando.rre.ll@gmail.com";
+$preference->save();
 
 ?>
 
