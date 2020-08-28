@@ -20,13 +20,17 @@ $preference->payment_methods = array(
   );
 
 // Crea un ítem en la preferencia
+
+$NombreProducto = $_POST['title'];
+$Precio = $_POST['price'];
+
 $item = new MercadoPago\Item();
 $item->id = "1";
-$item->title = "Moto G4";
+$item->title = $NombreProducto;
 $item->description = "“Dispositivo móvil de Tienda e-commerce”";
 $item->quantity = 1;
 $item->currency_id = "MXN";
-$item->unit_price = 8000;
+$item->unit_price = $Precio;
 
 $preference->items = array($item);
 $preference->save();
