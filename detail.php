@@ -33,6 +33,7 @@ $item2->unit_price = 11.96;
 $preference->items = array($item1,$item2);
 $preference->save();
 
+//informacion del cliente
 $payer = new MercadoPago\Payer();
 $payer->name = "Lalo";
 $payer->surname = "Landa";
