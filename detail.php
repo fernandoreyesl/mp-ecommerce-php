@@ -50,9 +50,9 @@ $payer->address = array(
 );
 
 $preference->back_urls = array(
-    "success" => "https://fernandoreyesl-mp-commerce-php.herokuapp.com/success.php",
-    "failure" => "https://fernandoreyesl-mp-commerce-php.herokuapp.com/failure",
-    "pending" => "https://fernandoreyesl-mp-commerce-php.herokuapp.com/pending"
+    "success" => "https://hookb.in/RZjaLaRk6PSREEj72LyQ",
+    "failure" => "https://hookb.in/RZjaLaRk6PSREEj72LyQ",
+    "pending" => "https://hookb.in/RZjaLaRk6PSREEj72LyQ"
 );
 
 $preference->auto_return = "approved";
