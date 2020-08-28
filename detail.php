@@ -22,11 +22,11 @@ $preference->payment_methods = array(
 // Crea un ítem en la preferencia
 $item = new MercadoPago\Item();
 $item->id = "1";
-$item->title = "Samsung Galaxy S9";
+$item->title = "Moto G4";
 $item->description = "“Dispositivo móvil de Tienda e-commerce”";
 $item->quantity = 1;
 $item->currency_id = "MXN";
-$item->unit_price = 15000;
+$item->unit_price = 8000;
 
 $preference->items = array($item);
 $preference->save();
