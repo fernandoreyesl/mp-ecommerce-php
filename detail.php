@@ -20,12 +20,15 @@ $preference->payment_methods = array(
   );
 
 // Crea un ítem en la preferencia
-$item1 = new MercadoPago\Item();
-$item1->title = "LG G6";
-$item1->quantity = 1;
-$item1->unit_price = 10000;
+$item = new MercadoPago\Item();
+$item->id = "1";
+$item->title = "Samsung Galaxy S9";
+$item->description = "“Dispositivo móvil de Tienda e-commerce”";
+$item->quantity = 1;
+$item->currency_id = "MXN";
+$item->unit_price = 15000;
 
-$preference->items = array($item1);
+$preference->items = array($item);
 $preference->save();
 
 //informacion del cliente
