@@ -18,20 +18,6 @@ $preference->payment_methods = array(
     "installments" => 6
   );
 
-// Crea un ítem en la preferencia
-$item1 = new MercadoPago\Item();
-$item1->title = "Item de Prueba 1";
-$item1->quantity = 2;
-$item1->unit_price = 11.96;
-
-$item2= new MercadoPago\Item();
-$item2->title = "Item de Prueba 2";
-$item2->quantity = 1;
-$item2->unit_price = 11.96;
-
-$preference->items = array($item1,$item2);
-$preference->save();
-
 ?>
 
 <!DOCTYPE html>
