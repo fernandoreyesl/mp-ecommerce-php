@@ -27,8 +27,6 @@ $item->picuture_url = 'https://fernandoreyesl-mp-commerce-php.herokuapp.com/asse
 $item->quantity = 1;
 $item->unit_price = 8000;
 
-$item-> 
-
 $preference->items = array($item);
 $preference->save();
 
