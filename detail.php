@@ -10,7 +10,7 @@ $preference = new MercadoPago\Preference();
 
 $preference->payment_methods = array(
     "excluded_payment_methods" => array(
-      array("id" => "master")
+      array("id" => "amex")
     ),
     "excluded_payment_types" => array(
       array("id" => "atm")
