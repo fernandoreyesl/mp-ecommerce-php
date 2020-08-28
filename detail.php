@@ -19,15 +19,17 @@ $preference->payment_methods = array(
   );
 
 // Crea un ítem en la preferencia
-$item = new MercadoPago\Item();
+$item1 = new MercadoPago\Item();
+$item1->title = "Item de Prueba 1";
+$item1->quantity = 2;
+$item1->unit_price = 11.96;
 
-$item->title = 'Moto G4';
-$item->description = '“Dispositivo móvil de Tienda e-commerce”';
-$item->picuture_url = 'https://fernandoreyesl-mp-commerce-php.herokuapp.com/assets/motorola-moto-g4-3.jpg';
-$item->quantity = 1;
-$item->unit_price = 8000;
+$item2= new MercadoPago\Item();
+$item2->title = "Item de Prueba 2";
+$item2->quantity = 1;
+$item2->unit_price = 11.96;
 
-$preference->items = array($item);
+$preference->items = array($item1,$item2);
 $preference->save();
 
 ?>
