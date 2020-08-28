@@ -29,7 +29,7 @@ $item = new MercadoPago\Item();
 $item->id = "1";
 $item->title = $NombreProducto;
 $item->description = "Dispositivo móvil de Tienda e-commerce";
-$item->picture_url = "";
+$item->picture_url = $url;
 $item->quantity = 1;
 $item->unit_price = $Precio;
 
@@ -50,7 +50,7 @@ $payer->address = array(
 );
 
 $preference->back_urls = array(
-    "success" => "https://fernandoreyesl-mp-commerce-php.herokuapp.com/success",
+    "success" => "https://fernandoreyesl-mp-commerce-php.herokuapp.com/success.php",
     "failure" => "https://fernandoreyesl-mp-commerce-php.herokuapp.com/failure",
     "pending" => "https://fernandoreyesl-mp-commerce-php.herokuapp.com/pending"
 );
