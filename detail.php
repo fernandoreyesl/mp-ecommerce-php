@@ -49,6 +49,14 @@ $payer->address = array(
   "zip_code" => "03940"
 );
 
+$preference->back_urls = array(
+    "success" => "https://fernandoreyesl-mp-commerce-php.herokuapp.com/success",
+    "failure" => "https://fernandoreyesl-mp-commerce-php.herokuapp.com/failure",
+    "pending" => "https://fernandoreyesl-mp-commerce-php.herokuapp.com/pending"
+);
+
+$preference->auto_return = "approved";
+
 $preference->items = array($item);
 $preference->payer = $payer;
 $preference->external_reference = "fernando.rre.ll@gmail.com";
