@@ -23,9 +23,11 @@ $item = new MercadoPago\Item();
 
 $item->title = 'Samsung Galaxy S9';
 $item->description = '“Dispositivo móvil de Tienda e-commerce”';
-$item->picuture_url = 'https://fernandoreyesl-mp-commerce-php.herokuapp.com/assets/003.jpg';
+$item->picuture_url = 'https://fernandoreyesl-mp-commerce-php.herokuapp.com/assets/motorola-moto-g4-3.jpg';
 $item->quantity = 1;
 $item->unit_price = 15000;
+
+$item-> 
 
 $preference->items = array($item);
 $preference->save();
