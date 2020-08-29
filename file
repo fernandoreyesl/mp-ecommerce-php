@@ -1,0 +1,48 @@
+ curl -X POST \
+  'https://api.mercadopago.com/checkout/preferences?access_token=APP_USR-1159009372558727-072921-8d0b9980c7494985a5abd19fbe921a3d-617633181' \
+  -H 'content-type:application/json' \
+  -d '{
+        "items": [
+            {
+            "title": "Samsung Galaxy S9",
+            "description": "Dispositivo móvil de Tienda e-commerce",
+            "quantity": 1,
+            "unit_price": 15000,
+	        "external_reference": "fernando.rre.ll@gmail.com",
+	        "picture_url": "https://fernandoreyesl-mp-commerce-php.herokuapp.com/assets/samsung-galaxy-s9-xxl.jpg"
+            }
+        ],
+        "payer": {
+                "name": "Lalo",
+                "surname": "Landa",
+                "email": "test_user_58295862@testuser.com",
+                "phone": {
+                        "area_code": "52",
+                        "number": "5549737300"
+                },
+                "address": {
+                        "street_name": "Insurgentes Sur",
+                        "street_number": 1602,
+                        "zip_code": "03940"
+                }
+        },
+        "back_urls": {
+        "success": "https://fernandoreyesl-mp-commerce-php.herokuapp.com/",
+        "pending": "https://fernandoreyesl-mp-commerce-php.herokuapp.com/",
+        "failure": "https://fernandoreyesl-mp-commerce-php.herokuapp.com/"
+        },
+        "auto_return": "approved",
+        "payment_methods": {
+        "excluded_payment_methods": [
+            {
+                "id": "amex"
+            }
+        ],
+        "excluded_payment_types": [
+            {
+                "id": "atm"
+            }
+        ],
+        "installments": 6
+        }
+    }'
