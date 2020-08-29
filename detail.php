@@ -56,7 +56,7 @@ $preference->auto_return = "approved";
 $preference->items = array($item);
 $preference->payer = $payer;
 $preference->external_reference = "fernando.rre.ll@gmail.com";
-$preference->notification_url = "https://f1dd53659666adecbca06d6f5e985dea.m.pipedream.net";
+$preference->notification_url = "https://hookb.in/nPXjYdoYONSaBBGLq02P";
 $preference->save();
 
 ?>
