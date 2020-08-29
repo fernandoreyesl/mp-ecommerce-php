@@ -21,17 +21,13 @@ $preference->payment_methods = array(
 
 // Crea un ítem en la preferencia
 
-$NombreProducto = $_POST['title'];
-$Precio = $_POST['price'];
-$url = $_POST['img'];
-
 $item = new MercadoPago\Item();
 $item->id = "1";
-$item->title = $NombreProducto;
+$item->title = "Samsung Galaxy S9";
 $item->description = "Dispositivo móvil de Tienda e-commerce";
-$item->picture_url = $url;
+$item->picture_url = "https://fernandoreyesl-mp-commerce-php.herokuapp.com/assets/samsung-galaxy-s9-xxl.jpg";
 $item->quantity = 1;
-$item->unit_price = $Precio;
+$item->unit_price = 15000;
 
 //informacion del cliente
 $payer = new MercadoPago\Payer();
